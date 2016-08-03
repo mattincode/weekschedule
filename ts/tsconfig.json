@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "outDir": "../js",
+        "sourceMap": true
+    },
+    "exclude": [
+        "node_modules"
+    ],
+    "files": [
+        "Views/WeekCanvas.ts",
+        "Models/Booking.ts",
+        "Models/Employee.ts",        
+        "ViewModels/WeekScheduleViewModel"
+    ]
+}

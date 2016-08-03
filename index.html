@@ -1,24 +1,48 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <script src="js/Views/weekCanvas.js"></script>
-        <script>
+<html lang="sv-se">    
+
+<head>
+    <meta charset="utf-8">
+    <!--<meta http-equiv="content-type" content="text/html" charset="ISO-8859-1" />-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/gsp.css" rel="stylesheet">
+    <script src="js/Views/weekCanvas.js"></script>
+    <script>
             function init() {
                 var canvas = new WeekCanvas(document.getElementById('weekScheduleCanvas'));
             }
-        </script>                    
-    </head>
-    <body onload='init()'>
+        </script>
+</head>
+
+<body onload='init()'>
+    <div id="leftNav">
+        <div id="superSearch">
+            <input type="text" width="100" height="20" />
+        </div>
+        <span>
+                <a href="#" id="searchBtn"><img src="images/Find.png" width="24" height="24"/></a>  <!--Make click set display = block to show the popup-->
+                <a href="#"><img src="images/Appointment.png" width="24" height="24" /></a>                
+            </span>
+        <a href="#"><img src="images/Home.png" width="48" height="48" /></a>
+        <a href="#"><img src="images/WeekSchedule.png" width="48" height="48" /></a>
+        <a href="#"><img src="images/User-Find.png" width="48" height="48" /></a>
+        <a href="#"><img src="images/Map.png" width="48" height="48" /></a>
+        <a href="#"><img src="images/User-Time.png" width="48" height="48" /></a>
+    </div>
+    <div id="topNav">
+        <div id="headerText">VECKOBELÄGGNING</div>
+    </div>
+    <div id="main">
         <!--TODO: Header (Veckobeläggning + batchmeny + hjälpid + hjälpikon)-->
         <!--TODO: Datumväljare + Kontrollknapp + Ladda om knapp-->
         <!--TODO: Kst + pe + pg inkl. kost-picker(kan vi stjäla pickern från SEP/MPS/SCP?) -->
         <!--TODO: Sista lönekörningsdatum-->
-         <canvas id='weekScheduleCanvas'></canvas>
-         <!--TODO: Scrollbar på canvas-->
+        <canvas id='weekScheduleCanvas'></canvas>
+        <!--TODO: Scrollbar på canvas-->
+    </div>
 
-         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-         <script src="js/bootstrap.min.js"></script>
-    </body>    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
 </html>
 

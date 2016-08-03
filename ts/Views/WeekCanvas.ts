@@ -28,7 +28,7 @@ class WeekCanvas {
     public Draw() {
         var context = this.canvas.getContext("2d");
 
-        //context.fillRect(0, 0, 100, 100);
+        context.fillRect(0, 0, 100, 100);
         //TODO: Draw header (need dates)
         if (this.rows == null) return; 
         for (var row of this.rows) {
